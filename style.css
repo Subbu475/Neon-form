@@ -1,0 +1,81 @@
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.neon-form {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #0ff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+}
+
+.neon-form h2 {
+    color: #0ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.neon-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: black;
+    color: #0ff;
+    box-shadow: 0 0 10px #0ff;
+}
+
+.neon-form button {
+    width: 100%;
+    padding: 10px;
+    background: #0ff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .overall {
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .neon-form {
+        width: 90%;
+        /* Adjust form width for smaller screens */
+        padding: 15px;
+    }
+
+    .neon-form input,
+    .neon-form button {
+        font-size: 14px;
+        /* Adjust input and button size */
+    }
+
+    .neon-form h2 {
+        font-size: 20px;
+        /* Adjust heading size */
+    }
+}
